@@ -267,9 +267,34 @@ namespace Splunk.Client
 
         #region Privates
 
+        // NH
+        private static int undefinedPropertyIndex = 0;
+
         static string NormalizePropertyName(string name)
         {
-            Contract.Requires<ArgumentException>(!string.IsNullOrEmpty(name));
+            // NH: here is a payload snippet I got with the Nix Pull.
+            // Note the empty name, it breaks the contract that is commented out and crashes the program.
+            // I assigned undefined and removed the 
+
+            //<s:key name="fieldMetadataEvents">
+            //  <s:dict>
+            //    <s:key name="">
+            //      <s:dict>
+            //        <s:key name="type">num</s:key>
+            //      </s:dict>
+            //    </s:key>
+            //    <s:key name="deviceReceiptTime">
+            //      <s:dict>
+            //        <s:key name="type">num</s:key>
+            //      </s:dict>
+            //    </s:key>
+            //  </s:dict>
+            //</s:key>
+
+            //Contract.Requires<ArgumentException>(!string.IsNullOrEmpty(name));
+            if (String.IsNullOrEmpty(name))
+                name = string.Format("undefined{0}", ++undefinedPropertyIndex);
+
             var builder = new StringBuilder(name.Length);
             int index = 0;
 
