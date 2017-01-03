@@ -92,6 +92,11 @@ namespace Splunk.Client
             string preview = reader.GetRequiredAttribute("preview");
             this.IsFinal = !BooleanConverter.Instance.Convert(preview);
 
+            if (reader.IsEmptyElement)
+            {
+                return;
+            }
+
             if (!await reader.ReadAsync().ConfigureAwait(false))
             {
                 return;
@@ -101,7 +106,13 @@ namespace Splunk.Client
             await reader.ReadAsync().ConfigureAwait(false);
             reader.EnsureMarkup(XmlNodeType.Element, "fieldOrder");
 
-            if (!reader.IsEmptyElement)
+            if (reader.IsEmptyElement)
+            {
+                await reader.ReadAsync().ConfigureAwait(false);
+                reader.EnsureMarkup(XmlNodeType.EndElement, "meta");
+                await reader.ReadAsync().ConfigureAwait(false);
+            }
+            else
             {
                 await reader.ReadEachDescendantAsync("field", async (r) =>
                 {

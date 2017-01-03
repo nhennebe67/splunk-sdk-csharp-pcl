@@ -1,5 +1,30 @@
 # Splunk SDK for C# PCL
 
+## Version 2.2.5
+
+### Bug Fixes
+
+* Fix a bug with hanging oneshot searches (GitHub Issue [#54](https://github.com/splunk/splunk-sdk-csharp-pcl/issues/54)).
+
+## Version 2.2.4
+
+### Bug Fixes
+
+* Handle empty strings in Atom entry responses from the REST API. GitHub pull request #60.
+
+## Version 2.2.3
+
+### New features and APIs
+
+* Added AppVeyor support for automatic test runs.
+
+### Bug Fixes
+
+* Fixed an issue where the SDK would error out when trying to parse an Atom entry with unknown entries.
+* Better handles errors when dealing with export searches.
+* A variety of fixes to handle changes in output in the Splunk Enterprise 6.3 REST API.
+
+
 ## Version 2.2.2
 
 ### Bug Fixes
