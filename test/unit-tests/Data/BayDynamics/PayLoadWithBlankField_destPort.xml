@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<results preview='0'>
+	<meta>
+		<fieldOrder>
+			<field>AlertId</field>
+			<field>Filename</field>
+			<field>Action</field>
+			<field>DestIP</field>
+			<field>DestPort</field>
+			<field>From</field>
+			<field>Group</field>
+			<field>MD5</field>
+			<field>MIME</field>
+			<field>Message</field>
+			<field>Policy</field>
+			<field>Product</field>
+			<field>Protocol</field>
+			<field>Rule</field>
+			<field>Severity</field>
+			<field>SrcIP</field>
+			<field>SrcPort</field>
+			<field>Subject</field>
+			<field>Target</field>
+			<field>To</field>
+			<field>_time</field>
+			<field>Category</field>
+			<field>CC</field>
+			<field>dest</field>
+			<field>dest_ip</field>
+			<field>dest_asset_id</field>
+			<field>dest_pci_domain</field>
+			<field>dest_port</field>
+			<field>host_pci_domain</field>
+			<field>http_method</field>
+			<field>linecount</field>
+			<field>vendor_severity</field>
+			<field>vendor_pr</field>
+		</fieldOrder>
+	</meta>
+	<result offset='300'>
+		<field k='AlertId'>
+			<value>
+				<text>9ea38dba-37c0-11e6-ab38-98be9422b662</text>
+			</value>
+		</field>
+		<field k='Filename'>
+			<value>
+				<text>DutyDispositionReport.pdf</text>
+			</value>
+		</field>
+		<field k='Action'>
+			<value>
+				<text>alert</text>
+			</value>
+		</field>
+		<field k='DestIP'>
+			<value>
+				<text>10.10.33.80</text>
+			</value>
+		</field>
+		<field k='DestPort'>
+			<value></value>
+		</field>
+		<field k='From'>
+			<value>
+				<text>bounces+568600-1419-pkddr=llbean.com@mail.medgate.com</text>
+			</value>
+		</field>
+		<field k='Group'>
+			<value>
+				<text>default</text>
+			</value>
+		</field>
+		<field k='MD5'>
+			<value>
+				<text>&lt;n/a&gt;</text>
+			</value>
+		</field>
+		<field k='MIME'>
+			<value>
+				<text>-</text>
+			</value>
+		</field>
+		<field k='Message'>
+			<value>
+				<text>bounces+568600-1419-pkddr=llbean.com@mail.medgate.com pkddr@llbean.com,mlatuscha@llbean.com DUTY DISPOSITION REPORT for: Peterson Cheryl(29148) DutyDispositionReport.pdf</text>
+			</value>
+		</field>
+		<field k='Policy'>
+			<value>
+				<text>L.L. Bean test policy</text>
+			</value>
+		</field>
+		<field k='Product'>
+			<value>
+				<text>Fidelis network</text>
+			</value>
+		</field>
+		<field k='Protocol'>
+			<value>
+				<text>SMTP</text>
+			</value>
+		</field>
+		<field k='Rule'>
+			<value>
+				<text>LLB-SMTP-Traffic</text>
+			</value>
+		</field>
+		<field k='Severity'>
+			<value>
+				<text>critical</text>
+			</value>
+		</field>
+		<field k='SrcIP'>
+			<value>
+				<text>68.232.146.176</text>
+			</value>
+		</field>
+		<field k='SrcPort'>
+			<value>
+				<text>3750</text>
+			</value>
+		</field>
+		<field k='Subject'>
+			<value>
+				<text>DUTY DISPOSITION REPORT for: Peterson Cheryl(29148)</text>
+			</value>
+		</field>
+		<field k='Target'>
+			<value>
+				<text>SMTP:mlatuscha@llbean.com, pkddr@llbean.com</text>
+			</value>
+		</field>
+		<field k='To'>
+			<value>
+				<text>pkddr@llbean.com,mlatuscha@llbean.com</text>
+			</value>
+		</field>
+		<field k='_time'>
+			<value>
+				<text>2016-06-21T10:58:26.000-04:00</text>
+			</value>
+		</field>
+		<field k='Category'>
+			<value>
+				<text>-</text>
+			</value>
+		</field>
+		<field k='CC'>
+			<value>
+				<text>-</text>
+			</value>
+		</field>
+		<field k='dest'>
+			<value>
+				<text>10.10.33.80</text>
+			</value>
+		</field>
+		<field k='dest_ip'>
+			<value>
+				<text>10.10.33.80</text>
+			</value>
+		</field>
+		<field k='dest_asset_id'>
+			<value>
+				<text>ca2c50e20eed8e70a6f41e5e8d2ca5b1</text>
+			</value>
+		</field>
+		<field k='dest_pci_domain'>
+			<value>
+				<text>trust</text>
+			</value>
+		</field>
+		<field k='dest_port'>
+			<value>
+				<text>25</text>
+			</value>
+		</field>
+		<field k='host_pci_domain'>
+			<value>
+				<text>untrust</text>
+			</value>
+		</field>
+		<field k='http_method'>
+			<value>
+				<text>&lt;n/a&gt;</text>
+			</value>
+		</field>
+		<field k='linecount'>
+			<value>
+				<text>1</text>
+			</value>
+		</field>
+		<field k='vendor_severity'>
+			<value>
+				<text>critical</text>
+			</value>
+		</field>
+		<field k='vendor_pr'>
+			<value>
+				<text>-</text>
+			</value>
+		</field>
+	</result>
+</results>

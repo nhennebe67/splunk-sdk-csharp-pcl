@@ -13,6 +13,7 @@
 	/// <summary>
 	/// Starts a normal search and polls for completion to find out when the search has finished.
 	/// </summary>
+    /// 
 	class Program
 	{
 		static void Main(string[] args)
@@ -24,12 +25,14 @@
 		static async Task Run()
 		{
 
-			using (StreamReader sr = new StreamReader(@"C:\Temp\1tag.xml"))
+			using (StreamReader sr = new StreamReader(@"C:\Temp\PayLoadWithNullField_turkish.xml"))
 			{
 				String payload = sr.ReadToEnd();
 
 				HttpResponseMessage message = new HttpResponseMessage(HttpStatusCode.OK);
 				message.Content = new StringContent(payload);
+
+
 
 				// NH
 				Response.StreamResultEncodingOverride = Encoding.GetEncoding("ISO-8859-9");
@@ -43,19 +46,22 @@
 					try
 					{
 
-						foreach (SearchResult result in srStream)
+                        
+
+
+                        foreach (SearchResult result in srStream)
 						{
-
-
-							count++;
-
-
+                            foreach (string fieldName in result.FieldNames)
+                            {
+                                Console.WriteLine(String.Format("{0}: {1}", fieldName, result.GetValue<string>(fieldName, new StringValueConverter())));
+                            }
+                            count++;
 						}
 					}
 					catch (Exception e)
 					{
-
-					}
+                        Console.WriteLine(e.Message);
+                    }
 					finally
 					{
 						Console.WriteLine(String.Format("SearchCount process: {0}", count));
