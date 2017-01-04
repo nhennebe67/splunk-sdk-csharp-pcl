@@ -10,7 +10,7 @@
     <licenseUrl>https://github.com/splunk/splunk-sdk-csharp-pcl/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/splunk/splunk-sdk-csharp-pcl</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>This package contains the Splunk Portable Client for consuming Splunk's API.</description>
+    <description>[Bay Dynamics, Inc custom build] This package contains the Splunk Portable Client for consuming Splunk's API.</description>
     <copyright>2014 Splunk</copyright>
     <tags>Splunk</tags>
     <language>en-US</language>
