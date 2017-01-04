@@ -118,3 +118,4 @@ UpgradeLog*.XML
 # png files in root dir
 /*.png
 
+/src/Splunk.Client/Splunk.Client.2.2.5.1.nupkg
